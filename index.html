@@ -42,7 +42,8 @@
     h2 { margin: 0; font-size: 26px; font-weight: 600; letter-spacing: 1px; }
     .section-label { color: #8992a6; font-size: 10px; letter-spacing: 2.5px; }
     .games { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .game { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #171d2a; }
+    .game { display: block; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #171d2a; }
+    .game:hover { border-color: #c5eaa680; }
     .game-art { position: relative; height: 220px; overflow: hidden; isolation: isolate; display: flex; flex-direction: column; justify-content: center; align-items: center; }
     .journey { background: radial-gradient(ellipse at 50% 100%, #9c6f434d, transparent 65%), linear-gradient(135deg, #242739, #383442 55%, #483c3b); }
     .light { background: radial-gradient(ellipse at 50% 40%, #8cbcb42b, transparent 60%), linear-gradient(130deg, #142c39, #23414b 55%, #263f45); }
@@ -106,14 +107,14 @@
       <section class="section" id="games" aria-labelledby="games-title">
         <div class="section-top"><h2 id="games-title">我们的作品</h2><span class="section-label">OUR GAMES / 01—02</span></div>
         <div class="games">
-          <article class="game">
+          <a class="game" href="https://www.taptap.cn/app/187883?os=android" target="_blank" rel="noopener noreferrer" aria-label="传说之旅：前往 TapTap（在新标签页打开）">
             <div class="game-art journey" aria-hidden="true"><div class="ring"></div><div class="mountain one"></div><div class="mountain two"></div><div class="art-title">传说之旅</div><div class="art-subtitle">TOUCH MELODY · GAMES</div></div>
-            <div class="game-info"><div><h3>传说之旅</h3><p>指尖律动 · 游戏作品</p></div><span class="game-number" aria-hidden="true">01</span></div>
-          </article>
-          <article class="game">
+            <div class="game-info"><div><h3>传说之旅</h3><p>前往 TapTap 了解游戏 ↗</p></div><span class="game-number" aria-hidden="true">01</span></div>
+          </a>
+          <a class="game" href="https://www.taptap.cn/app/600170?os=android" target="_blank" rel="noopener noreferrer" aria-label="迷途之光：前往 TapTap（在新标签页打开）">
             <div class="game-art light" aria-hidden="true"><div class="beam"></div><div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div><div class="mountain one"></div><div class="mountain two"></div><div class="art-title">迷途之光</div><div class="art-subtitle">TOUCH MELODY · GAMES</div></div>
-            <div class="game-info"><div><h3>迷途之光</h3><p>指尖律动 · 游戏作品</p></div><span class="game-number" aria-hidden="true">02</span></div>
-          </article>
+            <div class="game-info"><div><h3>迷途之光</h3><p>前往 TapTap 了解游戏 ↗</p></div><span class="game-number" aria-hidden="true">02</span></div>
+          </a>
         </div>
       </section>
       <section class="section about" id="about" aria-labelledby="about-title">
